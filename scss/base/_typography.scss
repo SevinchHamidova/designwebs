@@ -1,0 +1,25 @@
+@use "../abstracts/mixins" as mixins;
+
+@font-face {
+    @include fonts-rubik-300;
+}
+
+@font-face {
+   @include fonts-rubik-400;
+}
+
+@font-face {
+   @include fonts-r-m-400;
+}
+
+@font-face {
+   @include fonts-r-m-500;
+}
+
+@font-face {
+  @include fonts-roboto-400;
+}
+
+@font-face {
+  @include fonts-roboto-500;
+}

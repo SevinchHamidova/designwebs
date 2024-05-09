@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as vars;
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: inline-block;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.unscroll {
+    overflow-y: hidden;
+}

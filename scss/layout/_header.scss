@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+
+.site-header {
+    box-shadow: 0px 1px 10px 0px vars.$main-bow-shadow-color;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    background-color: vars.$main-header-bg-color;
+}
+
+.site-header-inner {
+    position: relative;
+    @include df-struk
+}
+
+.site-header-menu {
+    width: 35px;
+    height: 35px;
+    background-image: url("../../images/menu.svg");
+    background-size: 100%;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .site-header-menu {
+        display: none;
+    }
+
+    .logo-img {
+        width: 108px;
+        height: 80px;
+        margin-right: 52px;
+    }
+
+    .site-header-inner {
+        justify-content: flex-start;
+    }
+
+
+   
+
+}
+
+@media only screen and (min-width: 640px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .site-header {
+        padding: 20px 0;
+    }
+}
+
+

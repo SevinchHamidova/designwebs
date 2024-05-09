@@ -1,0 +1,7 @@
+
+@use "../abstracts/mixins" as mixins;
+
+
+.container {
+  @include mixins.container-sty;
+}

@@ -1,0 +1,123 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: 71vh;
+    background-color: vars.$main-header-bg-color;
+    display: none;
+}
+
+.open .navbar {
+    display: block;
+}
+
+.logo-img {
+    width: 49px;
+    height: 38px;
+
+}
+
+.navbar-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar-item {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.navbar-item:last-child {
+    margin-bottom: 0;
+}
+
+.navbar-link {
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.74px;
+    text-align: center;
+    color: vars.$main-light-text-color;
+
+
+}
+
+.navbar-list:last-child {
+    display: none;
+}
+
+.navbar-link:hover {
+    border-bottom: 2px solid vars.$main-light-text-color;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .site-footer .navbar {
+        width: 68%;
+    }
+
+    .navbar-list:last-child {
+        display: flex;
+    }
+
+
+
+    .navbar-list {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .navbar-item {
+        margin-bottom: 0;
+        margin-right: 28px;
+    }
+
+
+    .navbar-item:last-child {
+        margin-right: 0;
+    }
+
+    .navbar-list:first-child>.navbar-item:last-child:last-child {
+        display: none;
+    }
+
+    .user-icon {
+        display: inline-block;
+        padding: 8px 10px;
+        background-color: #B9D5D9;
+        border-radius: 50%;
+    }
+
+ 
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    .navbar-item {
+        margin-right: 42px;
+    }
+
+}
+

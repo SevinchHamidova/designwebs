@@ -1,0 +1,548 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+
+.site-work-section {
+    position: relative;
+    padding: 32px 0;
+
+}
+
+.section-title {
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.33px;
+    text-align: left;
+    color: vars.$main-text-color;
+    text-transform: uppercase;
+}
+
+.work-list {
+   @include ul-li-sty;
+}
+
+.work-item {
+    margin-bottom: 24px;
+    width: 188px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.work-item::before {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: -120px; */
+    /* right: 25px; */
+    /* bottom: 570px; */
+    background-image: url("../../images/icondogpath.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 2px 50px 0px #0000000F;
+    padding: 36px;
+    content: " ";
+}
+
+.work-item:first-child::before {
+    background-image: url("../../images/iconglass.png");
+}
+
+.work-item:last-child::before {
+    background-image: url("../../images/icontrusrt.svg");
+}
+
+.work-item-about {
+    margin-top: 122px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: vars.$main-text-color;
+}
+
+.work-bottom-bg {
+    background-image: url("../../images/sectionbdmobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    margin-bottom: 70px;
+
+}
+
+.zoo-like {
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.46px;
+    letter-spacing: 0.1em;
+    color: vars.$main-bg-color;
+    padding: 10px 30px 10px 20px;
+    border: 1px solid vars.$main-bg-color;
+    border-radius: 50px;
+    display: none;
+}
+
+.zoo-like::before {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: -18px;
+    background-image: url("../../images/iconheart.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.zoo-in-list {
+    position: relative;
+    @include ul-li-sty;
+}
+
+.zoo-in-item {
+    width: 240px;
+
+    margin: 0 auto;
+
+    box-shadow: 0px 2.18px 32.73px 0px #0000000F;
+    padding: 24px 5px;
+    margin-bottom: 20px;
+}
+
+.zoo-img {
+    display: block;
+    width: 152px;
+    height: 147px;
+    margin: 0 auto 32px;
+}
+
+
+.zoo-in-title {
+    font-family: 'Roboto';
+    font-size: 17.45px;
+    font-weight: 500;
+    line-height: 20.45px;
+    text-align: left;
+    color: #2D2D2D;
+    margin: 10px 0 0;
+
+}
+
+
+.zoo-in-item:nth-child(3),
+.zoo-in-item:nth-child(4),
+.zoo-in-item:nth-child(5),
+.zoo-in-item:nth-child(6) {
+    display: none;
+}
+
+.zoo-in-item::after {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    margin-left: 200px;
+    background-image: url("../../images/icontv.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.zoo-in-about {
+    font-family: 'Roboto';
+    font-size: 13.09px;
+    font-weight: 400;
+    line-height: 15.34px;
+    text-align: left;
+    margin: 0;
+    color: #909090;
+
+}
+
+.site-pay {
+    background-image: url("../../images/sectionbgmobiles.svg");
+    padding: 50px 0 77px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-pay-link {
+    display: none;
+    text-align: center;
+    padding: 8px 50px;
+    font-family: 'Roboto Mono';
+font-size: 14px;
+font-weight: 500;
+line-height: 18.46px;
+letter-spacing: -0.05em;
+color: vars.$main-text-color;
+border-radius: 100px;
+border: 1px solid vars.$main-light-text-color;
+background-color: vars.$main-light-text-color;
+}
+
+.second-pay-link {
+    text-align: center;
+    padding: 8px 50px;
+    font-family: 'Roboto Mono';
+font-size: 14px;
+font-weight: 500;
+line-height: 18.46px;
+letter-spacing: -0.05em;
+color: vars.$main-text-color;
+border-radius: 100px;
+border: 1px solid vars.$main-light-text-color;
+background-color: vars.$main-light-text-color;
+
+}
+
+.pay-list {
+    position: relative;
+    @include ul-li-sty;
+}
+
+.pay-item {
+    width: 186px;
+    margin: 0 auto 74px;
+}
+
+.pay-item::before {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../../images/iconhand.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid vars.$main-white-color;
+    background-color: vars.$main-white-color;
+    border-radius: 50%;
+    box-shadow: 0px 2px 50px 0px #0000000F;
+    padding: 36px;
+    content: " ";
+}
+
+.pay-item:nth-child(2)::before {
+    background-image: url("../../images/icontrusrt.svg");
+}
+
+.pay-item:last-child::before {
+    background-image: url("../../images/Vector.svg");
+}
+
+
+.pay-title {
+    padding-top: 122px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #C5E1E5;
+}
+
+.pay-wrap {
+ @include df-struk;
+}
+
+.feedbeck-list {
+    @include ul-li-sty;
+}
+
+.feedbeck-item{
+    width: 300px;
+    margin: 0 auto;
+    background-image: url("../../images/Rectangle 14.png");
+    background-position-y: -55px;
+    margin-bottom: 34px;
+}
+
+.massage-time {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: #B3B3B3;
+}
+
+.massege-text {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #2D2D2D;
+    
+}
+
+.massage-author {
+    margin-left: 50px;
+    font-family: 'Roboto';
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+line-height: 16.41px;
+text-align: left;
+color: #000;
+margin-top: 20px;
+}
+
+.massage-author::before {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto; */
+   margin-top: -10px;
+   margin-left: -50px;
+    background-image: url("../../images/userone.png");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.feedbeck-item:nth-child(2) .massage-author::before {
+    background-image: url("../../images/usertwo.png");
+}
+
+
+.feedbeck-item:nth-child(3) .massage-author::before {
+    background-image: url("../../images/userthree.png");
+}
+
+.first-massage-link {
+    font-family: 'Roboto Mono';
+font-size: 14px;
+font-weight: 400;
+line-height: 18.46px;
+letter-spacing: 0.1em;
+color: vars.$main-bg-color;
+padding: 10px 35px;
+border-radius: 100px;
+border: 2px solid vars.$main-bg-color;
+display: none;
+}
+
+.first-massage-link::before {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+   margin-left: -22px;
+    background-image: url("../../images/iconmassage.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.second-massage-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.46px;
+    letter-spacing: 0.1em;
+    color: vars.$main-bg-color;
+    padding: 10px 35px;
+    border-radius: 100px;
+    border: 2px solid vars.$main-bg-color;
+}
+
+.second-massage-link::before {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+   margin-left: -22px;
+    background-image: url("../../images/iconmassage.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.animals-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include ul-li-sty;
+}
+
+.animal-item {
+    margin-right: 4px;
+}
+
+.animal-item img {
+    width: 89px;
+}
+
+.animals-list::after {
+    position: absolute;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+   
+    margin: 220px 0 0 100px;
+    /* bottom: 0; */
+   /* margin-left: -22px; */
+    background-image: url("../../images/arrowbotton.svg");
+    background-repeat: no-repeat !important;
+    content: "";
+}
+
+
+@media only screen and (min-width: 640px) {
+    .work-list {
+        @include df-struk;
+    }
+
+    .work-bottom-bg::after {
+        width: 100%;
+        min-width: 290px;
+        height: 291px;
+        background-size: auto;
+        background-image: url("../../images/secctionbgtablet.svg");
+    }
+
+
+    .zoo-in-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .zoo-in-item:nth-child(3),
+    .zoo-in-item:nth-child(4) {
+        display: block;
+    }
+
+    .zoo-like {
+        display: block;
+    }
+
+    .title-wrap {
+        @include ul-li-sty;
+    }
+
+    .pay-list {
+        display: flex;
+    }
+    .site-pay {
+        background-image: url("../../images/sectionbigbgdesktop.svg");
+        background-size: auto;
+        background-position:  center;
+    }
+
+
+
+    .first-pay-link {
+        display: block;
+    }
+    .second-pay-link {
+        display: none;
+    }
+
+    .feedbeck-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feedbeck-item {
+        margin-right: 20px;
+    }
+
+    .second-massage-link {
+        display: none;
+
+    }
+    .first-massage-link {
+        display: block;
+    }
+    .pay-wrap {
+        margin-bottom: 30px;
+    }
+
+    .massage-author {
+        margin-top: 30px;
+    }
+    .animals-list::after {
+        height: 105px;
+        margin: 0;
+        right: 0;
+       background-image: url("../../images/arrowleftrigth.svg");
+    }
+
+    .animals-list {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .animal-item:nth-child(5), .animal-item:nth-child(6) {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .zoo-in-item:nth-child(5),
+    .zoo-in-item:nth-child(6) {
+        display: block;
+
+    }
+
+    .zoo-in-item {
+        width: 336px;
+    }
+
+    .zoo-in-item::after {
+        content: none;
+    }
+
+    .work-bottom-bg {
+        background-image: url("../../images/Illustration.png");
+        height: 523px;
+
+    }
+
+    .first-pay-link {
+        margin-left: 30px;
+    }
+
+    .pay-item {
+        width: 367px;
+    }
+
+    .site-pay {
+        padding: 150px 200px;
+    }
+
+    .animal-item:nth-child(5), .animal-item:nth-child(6) {
+    display: block;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1120px) {
+
+    .animals-list::after {
+        right: 100px;
+    }
+}

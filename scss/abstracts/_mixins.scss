@@ -1,0 +1,81 @@
+@mixin visual-hiddens-sty {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@mixin container-sty {
+    max-width: 1178px;
+    padding-inline: 20px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+@mixin df-struk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin df-jcs-sty {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin ul-li-sty {
+    list-style: none;
+    padding-left: 0;
+}
+
+@mixin fonts-rubik-300 {
+    font-display: swap;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../../fonts/rubik-v28-latin-300.woff2') format('woff2');
+}
+
+@mixin fonts-rubik-400 {
+    font-display: swap;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/rubik-v28-latin-regular.woff2') format('woff2');
+}
+
+@mixin fonts-r-m-400 {
+    font-display: swap;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/roboto-mono-v23-latin-regular.woff2') format('woff2');
+}
+
+@mixin fonts-r-m-500 {
+    font-display: swap;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../fonts/roboto-mono-v23-latin-500.woff2') format('woff2');
+}
+
+@mixin fonts-roboto-400 {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@mixin fonts-roboto-500 {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}

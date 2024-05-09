@@ -1,0 +1,203 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.site-hiro {
+    background-image: url("../../images/hirobgmobile.svg");
+    padding: 20px 0 60px;
+}
+
+.hiro-tablet-img {
+    display: block;
+    width: 255px;
+    height: 211px;
+    margin: 0 auto;
+}
+
+.hiro-title {
+    font-family: "Rubik";
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 37.92px;
+    color: #F3F7F8;
+    margin: 0;
+}
+
+.hiro-title span {
+    font-weight: 400;
+}
+
+.hiro-about {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #F3F7F8;
+}
+
+
+.hiro-watch-link,
+.hiro-link {
+    display: inline-block;
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.46px;
+    letter-spacing: 0.1em;
+    color: vars.$main-text-color;
+    width: 131px;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid vars.$main-light-text-color;
+    background-color: vars.$main-light-text-color;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.hiro-watch-link {
+    margin-right: 20px;
+}
+
+.hiro-watch-link:hover,
+.hiro-link:hover {
+    box-shadow: 0px 2px 50px 0px #B9D5D999;
+    background-color: vars.$main-light-text-color;
+    color: vars.$main-text-color;
+}
+
+
+.link-wrap {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.hiro-desk-img {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 640px) {
+    .hiro-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .hiro-inner-about {
+        width: 324px;
+        margin-bottom: 130px;
+    }
+
+    .hiro-inner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hiro-watch-link,
+    .hiro-link {
+        width: 150px;
+    }
+
+    .site-hiro {
+        background-image: url("../../images/hirobgtablet.svg");
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: 100%;
+    }
+
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+    .hiro-tablet-img {
+        width: 320px;
+        height: 250px;
+    }
+
+    .site-hiro {
+        width: 100%;
+        background-position: center;
+        background-image: url("../../images/hirobgdesktop.svg");
+        background-size: 100%;
+        padding: 165px 0;
+        margin-top: -163px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    .navbar-item {
+        margin-right: 42px;
+    }
+
+    .hiro-tablet-img {
+        display: none;
+    }
+
+    .hiro-desk-img {
+        display: block;
+        width: 388px;
+        height: 390px;
+    }
+
+    .hiro-inner-about {
+        width: 630px;
+        margin-bottom: 150px;
+    }
+
+    .hiro-title {
+        font-size: 64px;
+        line-height: 85.32px;
+    }
+
+    .hiro-about {
+        width: 480px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 37px;
+    }
+
+    .hiro-link {
+        display: none;
+    }
+
+    .hiro-watch-link {
+        width: 258px;
+        height: 52px;
+        padding: 14px 70px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    .hiro-inner {
+        padding-top: 70px;
+        padding-bottom: 220px;
+    }
+
+    /* .hiro-desk-img {
+        width: 560px;
+        height: 460px;
+    } */
+    .site-hiro {
+        padding: 0;
+        margin-top: -190px;
+    }
+
+    .hiro-inner {
+        margin-top: 100px;
+        padding-top: 78px 0;
+    }
+
+    .site-hiro {
+        padding: 35px 0;
+    }
+}
